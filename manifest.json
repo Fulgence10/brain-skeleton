@@ -1,0 +1,31 @@
+{
+    "name": "Y'ATOUT OFFICIEL",
+    "short_name": "Y'ATOUT",
+    "version": "1.0",
+    "manifest_version": 2,
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "type": "image/png",
+            "src": "./src/assert/logo_yatoot_min.png",
+            "sizes": "168x130"
+        },
+        {
+            "type": "image/png",
+            "src": "./src/assert/logo_yatoot_carree.png",
+            "sizes": "144x144"
+        }
+    ],
+    "theme_color": "#1fc035",
+    "theme": {
+        "colors": {
+          "frame": "black",
+          "tab_background_text": "white",
+          "toolbar": "black",
+          "bookmark_text": "white"
+        }
+    },
+    "description": "Site e-commerce ou l'on trouve et vend tout ce qu'il souhaite"
+}

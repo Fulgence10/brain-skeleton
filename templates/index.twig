@@ -1,0 +1,14 @@
+{% extends "layout.twig" %}
+
+{% block head %}
+<!-- js and css -->
+<script type="module">
+    import d from"/src/js/BrainParticule.js";let canvas=document.querySelector("#canvas");if(canvas){let a=window.innerWidth,b=window.innerHeight;canvas.width=a,canvas.height=b;let e=0,f=0,c=new d(canvas,a,b),g=c.generateParticulesFromText("BrainPHP",{size:6,adjustX:45,adjustY:30,particule:{radius:2,color:"#cc22cc"}});c.animate(function(){c.drawParticule(g),c.desintegre(g,e,f,150)}),window.addEventListener("mousemove",a=>{e=a.clientX,f=a.clientY})}
+</script>
+{% endblock head %}
+
+{% block body %}
+
+<canvas id="canvas"></canvas>
+        
+{% endblock body %}
